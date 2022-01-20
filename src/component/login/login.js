@@ -43,8 +43,8 @@ const Login = () => {
                     <div className='label-gender'>
                         <select name="cars" id="cars" value={gender} onChange={(e)=>setgender(e.target.value)}>
                             <option value="empti">none</option>
-                            <option value="male">مرد</option>
-                            <option value="famale">زن</option>
+                            <option value="0">مرد</option>
+                            <option value="1">زن</option>
                         </select>
                         <p className='gender'>:جنسیت</p>               
                     </div>

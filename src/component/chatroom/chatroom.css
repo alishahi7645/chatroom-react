@@ -1,0 +1,161 @@
+* {
+    border: none;
+    margin: 0;
+}
+input{
+    border: none;
+}
+
+.chatroom {
+    width: 100%;
+    height: 655px;
+    background-color: rgb(233, 225, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.chatroom-section {
+    width: 80%;
+    height: 70%;
+    border: 2px solid rgb(172, 169, 169);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.chatroom-section .header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(172, 169, 169);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chatroom-section .header h1 {
+    color: red;
+    font-weight: bold;
+}
+
+.chatroom-section .received-message {
+    width: 100%;
+    height: 280px;
+    border-bottom: 1px solid rgb(172, 169, 169);
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    flex-direction: column; */
+    overflow-y: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.chatroom-section .received-message .message-item {
+    flex-direction: row-reverse;
+    display: flex;
+    margin-right: 0;
+    width: 100%;
+    
+    margin-top: 5px;
+}
+
+.chatroom-section .received-message .message-reverse {
+    display: flex;
+    
+    margin-top: 5px;
+}
+.date{
+    font-size: 10px;
+    color: rgb(129, 127, 127);
+}
+.chatroom-section .received-message .message-item .messages {
+    margin-right: 10px;
+    margin-bottom: 37px;
+}
+
+
+.chatroom-section .received-message .message-item .messages .message-paragraf{
+    border: 1px solid #cacaca;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.chatroom-section .received-message .message-reverse .messages .message-paragraf{
+    border: 1px solid #cacaca;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.chatroom-section .received-message .message-item .message-user {
+    margin-bottom: 7px;
+}
+
+.chatroom-section .submit-message {
+    width: 100%;
+    height: 80px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.chatroom-section .submit-message input {
+    width: 80%;
+    height: 60px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.chatroom-section .submit-message button {
+    width: 10%;
+    height: 60px;
+    outline: transparent;
+    color: rgb(179, 180, 179);
+    font-size: 50px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.message-image{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.senddate{
+    display: flex;
+}
+.deletmessage{
+    font-size: 13px;
+    cursor: pointer;
+}
